@@ -16,8 +16,8 @@
   border-radius: 30px;
 }
 @media screen and (max-width: 1200px) {
-  #desktop-nav{
-    
+  .nav-links{
+    display:none;
   }
   .section__pic-container, #aboutme {
     width: 205;
