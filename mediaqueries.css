@@ -17,7 +17,7 @@
 }
 @media screen and (max-width: 1200px) {
   #desktop-nav{
-    display: none;
+    
   }
   .section__pic-container, #aboutme {
     width: 205;
