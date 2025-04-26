@@ -119,6 +119,9 @@ body.light {
   background-color: #ffffff;
   color: #b34545;
 }
+.degree h2{
+  color: black;
+}
 
 /* Dark theme */
 body.dark {
@@ -126,6 +129,9 @@ body.dark {
   color: rgb(181, 74, 12);
   a, #contact {
     color: white;
+  }
+  #about .text-container p{
+    color: rgb(135, 61, 61);
   }
 .arrow{
   background-color: white;
@@ -487,16 +493,20 @@ article .icon {
 #projects {
   position: relative;
 }
+.about-containers{
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
+  width: 300px;
 }
 
 .project-img {
   border-radius: 2rem;
-  width: 300px;
-  height: 200px;
+  width: 100%;
 }
 
 .project-title {
@@ -551,6 +561,48 @@ article .icon {
 
 .email-icon {
   height: 2.5rem;
+}
+/*education card*/
+.edu-container{
+  margin-top: 30px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+align-items: center;}
+.degree{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 200px;
+}
+.degree h2{
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  margin-top: -28px;
+  
+}
+.YOP{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 200px;
+}
+.YOP h3{
+  overflow:auto;
+  height:100px;
+  align-items: center;
+}
+/*experience*/
+#about .exp{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: space-around;
+  color: black;
 }
 
 /* FOOTER SECTION */
