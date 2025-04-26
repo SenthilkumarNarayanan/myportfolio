@@ -11,7 +11,6 @@
   <body>
     <nav id="desktop-nav">
       <img class="logo" src="./assets/portfolio-logo-png-transparent.png" alt="">
-
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -19,24 +18,26 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <nav id="hamburger-nav">
+          <div class="logo"> 
+          </div>
+          <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="menu-links">
+              <li><a href="#about" onclick="toggleMenu()">About</a></li>
+              <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+              <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+              <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+          </div>
+        </nav>
       </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo"> 
-      </div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
+      <img  id="theme-toggle" src="./assets/night-mode.png" alt="">
+
     </nav>
     <section id="profile">
       <div class="section__pic-container">
@@ -45,10 +46,14 @@
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Senthil Kumar</h1>
-        <p class="section__text__p2">MERN full-stack Developer</p>
+        <marquee class="section__text__p2" width="60%" direction="right" height="100px">
+          MERN full-stack Developer
+
+        </marquee>
+
         <div class="btn-container">
           <button
-            class="btn btn-color-2"
+            id="resume"class="btn btn-color-2"
             onclick="window.open('./assets/Resume.pdf')"
           >
             Download CV
@@ -97,7 +102,7 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>B.Sc Computer Science</p>
+              <p>B.Sc Computer Science <span><b>2011</b></span></p>
             </div>
           </div>
           <div class="text-container">
@@ -105,7 +110,7 @@
               Enthusiastic and detail-oriented MERN Stack Developer with 1 year of hands-on experience in developing scalable 
               web applications using MongoDB, Express.js, React.js, and Node.js. Strong foundation in full-stack web development, 
               RESTful APIs, and responsive UI design. Proven ability to work collaboratively and deliver clean,
-               maintainable code. Passionate about solving real-world problems through technology.
+              maintainable code. Passionate about solving real-world problems through technology.
 
 
             </p>
@@ -113,6 +118,7 @@
         </div>
       </div>
       <img
+        id="arrow"
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
@@ -270,12 +276,6 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick= "window.open('https://github.com/SenthilkumarNarayanan/Finddoctor.git','_blank')"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
                 target="_blank"
                 onclick="window.open('https://67f7462736b117df9641081f--find-my-best-doctor.netlify.app/','_blank')"
               >
@@ -296,13 +296,6 @@
               <button
                 class="btn btn-color-2 project-btn"
                 target="_blank"
-                onclick="window.open('https://github.com/SenthilkumarNarayanan/netflixclone.git','_blank')"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                target="_blank"
                 onclick="window.open('https://netlyfix-clone.netlify.app/','_blank')"
               >
                 Live Demo
@@ -319,13 +312,6 @@
             </div>
             <h2 class="experience-sub-title project-title">Todo App</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                target="_blank"
-                onclick="window.open('https://github.com/SenthilkumarNarayanan/React-TodoApp.git','_blank')"
-              >
-                Github
-              </button>
               <button
                 class="btn btn-color-2 project-btn"
                 target="_blank"
@@ -377,7 +363,7 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2025 Senthilkumar. All Rights Reserved.</p>
+      <p id="Copyright">Copyright &#169; 2025 My-portfolio. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
