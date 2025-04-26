@@ -501,12 +501,16 @@ article .icon {
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
-  width: 300px;
+  
 }
 
 .project-img {
   border-radius: 2rem;
-  width: 100%;
+  width: 400px;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
 }
 
 .project-title {
