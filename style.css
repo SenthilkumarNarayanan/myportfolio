@@ -494,9 +494,8 @@ article .icon {
   position: relative;
 }
 .about-containers{
-  display: flex;
-  flex-wrap: wrap;
-}
+  display: grid;
+grid-template-rows: auto;}
 
 .color-container {
   border-color: rgb(163, 163, 163);
