@@ -495,7 +495,7 @@ article .icon {
 }
 .about-containers{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between; /* pushes button to bottom */
   padding: 20px;
