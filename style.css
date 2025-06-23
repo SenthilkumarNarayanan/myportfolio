@@ -19,7 +19,7 @@ html {
   width: 180px;
   height: 150px;
   padding: 0;
-  margin: 0;
+  margin: 0;f
 }
 body {
   font-family: "roboto", sans-serif;
@@ -580,14 +580,14 @@ article .icon {
 
 /* md - min 768px */
 @media (min-width: 768px) {
-  .about-containers {
+  .about-containers-p {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* lg - min 1024px */
 @media (min-width: 1024px) {
-  .about-containers {
+  .about-containers-p {
     grid-template-columns: repeat(3, 1fr);
   }
 }
