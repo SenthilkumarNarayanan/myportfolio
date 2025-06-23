@@ -491,37 +491,125 @@ article .icon {
 /* PROJECTS SECTION */
 
 #projects {
-  position: relative;
+  padding: 2rem;
+  text-align: center;
 }
-.about-containers{
-  display: flex;
-  flex-wrap: wrap;
-  ;}
 
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
-  
+.section__text__p1 {
+  font-size: 1rem;
+  color: #555;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-containers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.details-container {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.details-container:hover {
+  transform: translateY(-5px);
+}
+
+.article-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .project-img {
-  border-radius: 2rem;
   width: 100%;
-  height: auto;
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
+  max-width: 280px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  background-color: #ccc;
 }
 
 .project-title {
-  margin: 1rem;
-  color: black;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
 }
 
 .project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.project-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Tailwind-style Media Queries */
+
+/* sm - min 640px */
+@media (min-width: 640px) {
+  .project-img {
+    height: 200px;
+  }
+  .project-btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+/* md - min 768px */
+@media (min-width: 768px) {
+  .about-containers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* lg - min 1024px */
+@media (min-width: 1024px) {
+  .about-containers {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* xl - min 1280px */
+@media (min-width: 1280px) {
+  .project-img {
+    height: 220px;
+  }
+  .project-title {
+    font-size: 1.3rem;
+  }
+}
+
+/* 2xl - min 1536px */
+@media (min-width: 1536px) {
+  .project-img {
+    height: 240px;
+  }
+  .project-btn {
+    font-size: 1.1rem;
+  }
 }
 
 /* CONTACT */
