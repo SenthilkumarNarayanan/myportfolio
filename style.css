@@ -580,14 +580,14 @@ article .icon {
 
 /* md - min 768px */
 @media (min-width: 768px) {
-  .about-containers-p {
+  .about-containers {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* lg - min 1024px */
 @media (min-width: 1024px) {
-  .about-containers-p {
+  .about-containers {
     grid-template-columns: repeat(3, 1fr);
   }
 }
